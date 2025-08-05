@@ -5,7 +5,7 @@ import joblib
 # uvicorn main:app --reload
 
 app = FastAPI()
-
+# seve --- joblib.load
 model = joblib.load('model.pkl')
 scaler = joblib.load('scaler.pkl')
 
