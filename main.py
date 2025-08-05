@@ -58,4 +58,4 @@ async def predict(person: PersonSchema):
         diagnosis = "не болен"
 
     return {"approved": diagnosis, "probability": round(pred[0], 2)}
-
+# ///////////////
