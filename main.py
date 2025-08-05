@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 
-
+# uvicorn main:app --reload
 
 app = FastAPI()
 
