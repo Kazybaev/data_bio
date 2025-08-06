@@ -2,10 +2,10 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 
-
+# uvicorn main:app --reload
 
 app = FastAPI()
-
+# seve --- joblib.load
 model = joblib.load('model.pkl')
 scaler = joblib.load('scaler.pkl')
 
@@ -58,4 +58,4 @@ async def predict(person: PersonSchema):
         diagnosis = "не болен"
 
     return {"approved": diagnosis, "probability": round(pred[0], 2)}
-
+# //////////////////////////////
