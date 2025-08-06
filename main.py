@@ -9,7 +9,7 @@ app = FastAPI()
 model = joblib.load('model.pkl')
 scaler = joblib.load('scaler.pkl')
 
-
+# ////////////////////
 
 class PersonSchema(BaseModel):
     id: int
