@@ -8,7 +8,6 @@ app = FastAPI()
 # seve --- joblib.load
 model = joblib.load('model.pkl')
 scaler = joblib.load('scaler.pkl')
-# got
 
 
 class PersonSchema(BaseModel):
